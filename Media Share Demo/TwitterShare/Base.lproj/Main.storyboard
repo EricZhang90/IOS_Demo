@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsc-71-kxB">
+                                <rect key="frame" x="0.0" y="35" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="ucr-Up-vCe">
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="showShare:" destination="BYZ-38-t0r" id="9HV-um-lGx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Text something to post." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="odo-8J-dzE">
+                                <rect key="frame" x="0.0" y="79" width="320" height="489"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="odo-8J-dzE" secondAttribute="trailing" constant="-20" id="AkX-hc-vqJ"/>
+                            <constraint firstItem="odo-8J-dzE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="WFU-lQ-dtO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="odo-8J-dzE" secondAttribute="bottom" id="iA9-Kg-Mja"/>
+                            <constraint firstItem="rsc-71-kxB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nYe-9K-vNb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rsc-71-kxB" secondAttribute="trailing" constant="-20" id="ps9-Xn-Yg6"/>
+                            <constraint firstItem="odo-8J-dzE" firstAttribute="top" secondItem="rsc-71-kxB" secondAttribute="bottom" id="w6w-6P-JOH"/>
+                            <constraint firstItem="rsc-71-kxB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="zHP-tA-VqW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TwitterText" destination="odo-8J-dzE" id="zSV-2J-xTb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="316"/>
+        </scene>
+    </scenes>
+</document>
