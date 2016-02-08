@@ -1,0 +1,11 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'week4' do
+pod 'DistanceGetter', '~>0.1'
+end
+
+target 'week4Tests' do
+
+end
+
