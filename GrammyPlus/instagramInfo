@@ -1,0 +1,6 @@
+CLIENT ID 7924385f80a541caad447e9cce19deaf
+CLIENT SECRET d06f2aad825c4370bdaf19f29a294d93
+WEBSITE URL http://zenit.senecac.on.ca:13266/index.html
+REDIRECT URI  scheme://thing.com
+SUPPORT EMAIL lzhang216@myseneca.ca
+https://api.instagram.com/v1/users/self/feed?access_token=ACCESS-TOKEN
