@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" minimumZoomScale="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="olo-5R-frY">
+                                <rect key="frame" x="20" y="20" width="560" height="600"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="DSC00702" translatesAutoresizingMaskIntoConstraints="NO" id="lr9-Sc-59d">
+                                        <rect key="frame" x="0.0" y="0.0" width="4912" height="3264"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="4912" id="fw6-WU-iw8"/>
+                                            <constraint firstAttribute="height" constant="3264" id="k6e-JP-TBX"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lr9-Sc-59d" firstAttribute="top" secondItem="olo-5R-frY" secondAttribute="top" id="CeJ-ob-EWd"/>
+                                    <constraint firstAttribute="trailing" secondItem="lr9-Sc-59d" secondAttribute="trailing" id="Vsr-7l-5Dj"/>
+                                    <constraint firstAttribute="bottom" secondItem="lr9-Sc-59d" secondAttribute="bottom" id="bK5-ya-Ce7"/>
+                                    <constraint firstItem="lr9-Sc-59d" firstAttribute="leading" secondItem="olo-5R-frY" secondAttribute="leading" id="ifg-pP-f3k"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wYj-dl-Dhf"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="olo-5R-frY" secondAttribute="bottom" constant="-20" id="4sZ-Ty-UIS"/>
+                            <constraint firstItem="olo-5R-frY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NBA-Ny-NYh"/>
+                            <constraint firstItem="olo-5R-frY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="WLE-2k-lxa"/>
+                            <constraint firstItem="olo-5R-frY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nq2-N6-qaR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="lr9-Sc-59d" id="2eT-5k-Kg8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="-530"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DSC00702" width="4912" height="3264"/>
+    </resources>
+</document>

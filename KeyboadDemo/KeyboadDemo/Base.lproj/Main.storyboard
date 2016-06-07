@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="Samoyed" translatesAutoresizingMaskIntoConstraints="NO" id="abn-Nl-Lo2">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqO-8d-811">
+                                <rect key="frame" x="264" y="99" width="47" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Resign"/>
+                                <connections>
+                                    <action selector="resignButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kkl-56-bZQ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t5Y-OH-Qx4">
+                                <rect key="frame" x="72" y="99" width="147" height="30"/>
+                                <color key="backgroundColor" red="0.78864820079999998" green="0.78864820079999998" blue="0.78864820079999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t5Y-OH-Qx4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="56" id="473-yJ-4Ck"/>
+                            <constraint firstItem="nqO-8d-811" firstAttribute="leading" secondItem="t5Y-OH-Qx4" secondAttribute="trailing" constant="49" id="6hE-2w-r3p"/>
+                            <constraint firstItem="nqO-8d-811" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="Dv9-Zp-G5L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="abn-Nl-Lo2" secondAttribute="trailing" constant="-24" id="OW5-ZM-rYm"/>
+                            <constraint firstItem="t5Y-OH-Qx4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="ech-lZ-X9b"/>
+                            <constraint firstItem="abn-Nl-Lo2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="er4-s8-uDo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nqO-8d-811" secondAttribute="trailing" constant="44" id="liQ-AA-Jo5"/>
+                            <constraint firstItem="t5Y-OH-Qx4" firstAttribute="centerY" secondItem="nqO-8d-811" secondAttribute="centerY" id="lzB-p8-mnY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="abn-Nl-Lo2" secondAttribute="bottom" id="nLP-oA-Gfw"/>
+                            <constraint firstItem="abn-Nl-Lo2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-24" id="rOp-bb-oXQ"/>
+                            <constraint firstItem="nqO-8d-811" firstAttribute="leading" secondItem="t5Y-OH-Qx4" secondAttribute="trailing" constant="49" id="xuC-bM-vgY"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="buttonLayoutConstraint" destination="nLP-oA-Gfw" id="sHB-uG-aVF"/>
+                        <outlet property="textfield" destination="t5Y-OH-Qx4" id="i1U-cd-yYh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287.5" y="261.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Samoyed" width="1468" height="1042"/>
+    </resources>
+</document>
